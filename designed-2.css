@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('chocolates.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 16px;
+    color: goldenrod; /* Light font color for better readability */
+}
+h1, h2, p {
+    text-shadow: 2px 2px 4px #000000; /* Horizontal offset, vertical offset, blur radius, and color */
+}
+
+/* Adding transition effects to links in header and footer */
+header a, footer a {
+    transition: color 0.3s ease-in-out; /* Property, duration, timing function */
+}
+
+/* Changing color on hover to demonstrate transition */
+header a:hover, footer a:hover {
+    color: #f8f8f8; /* Lighter color for hover state */
+}
+
+/* Adding box shadow to header and footer */
+header, footer {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Horizontal offset, vertical offset, blur radius, spread radius, and color */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box shadow */
+}
+
+/* Changing box shadow on hover to demonstrate transition */
+header:hover, footer:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: goldenrod; /* Light font color */
+}
+
+p {
+    font-size: 1rem;
+    color: #f0f0f0; /* Light font color */
+}
+
+/* Media Queries for different screen sizes */
+@media screen and (min-width: 601px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    .chocolate-images img {
+        max-width: 90%;
+    }
+}
+
+.chocolate-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+header {
+    background: burlywood;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 50px 0;
+}
+
+.hero h1 {
+    margin: 0;
+    color: white; /* Ensuring high contrast for readability */
+}
+
+.hero p {
+    color: burlywood; /* Light color for paragraph */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #5cb85c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.image-crop{
+    width:20px;
+    height:15px;
+    object-fit: cover;
+    overflow:hidden;
+}
+.cta-button:hover {
+    background: #4cae4c;
+}
+
+.product-intro {
+    padding: 20px 0;
+}
+
+.product-intro h2 {
+    color: #ef630d;
+}
+
+.product-intro p {
+    color: #f3a87c;
+}
+
+.chocolate-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chocolate-images img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .chocolate-images img {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .chocolate-images img {
+        max-width: 90%;
+    }
+}
